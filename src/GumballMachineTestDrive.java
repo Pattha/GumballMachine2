@@ -1,6 +1,6 @@
 public class GumballMachineTestDrive {
  public static void main(String[]arg){
-	 GumballMachine gumballMachine = new  GumballMachine (5);
+	 GumballMachine gumballMachine = new  GumballMachine (10);
 	 
 	 System.out.println(gumballMachine);
 	 

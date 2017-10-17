@@ -3,6 +3,7 @@ public class GumballMachine {
    State noQuarterState;
    State hasQuarterState;
    State soldState;
+   State winnerState;
    
    State state = soldOutState;
    int count = 0;
@@ -12,6 +13,7 @@ public class GumballMachine {
 	   noQuarterState = new NoQuarterState(this);
 	   hasQuarterState = new HasQuarterState(this);
 	   soldState = new SoldState(this);
+	   winnerState = new WinnerState(this);
 	   this.count = numberGumballs;
 	   if(numberGumballs > 0){
 		   state = noQuarterState;
@@ -41,6 +43,11 @@ public State getHasQuarterStater() {
 	// TODO Auto-generated method stub
 	return hasQuarterState;
 }
+public State getWinnerState() {
+	// TODO Auto-generated method stub
+	return winnerState;
+}
+
 public State getNoQuarterState() {
 	// TODO Auto-generated method stub
 	return noQuarterState;
